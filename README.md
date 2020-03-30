@@ -12,7 +12,7 @@
 
 ## DEMO
 - 品目の追加
-https://gyazo.com/5ee7c62bb4902602dd4cd79f581b7cca
+[![Image from Gyazo](https://i.gyazo.com/5ee7c62bb4902602dd4cd79f581b7cca.gif)](https://gyazo.com/5ee7c62bb4902602dd4cd79f581b7cca)
 - タブをクリックすると関連する品目の表示
 
 ## 実装予定の内容

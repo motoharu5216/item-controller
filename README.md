@@ -1,27 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリ名
+- 在庫管理アプリ（仮）
 
-Things you may want to cover:
+## 概要
+- 飲食店向けの在庫の把握と、記帳をメインに設計しています。
 
-* Ruby version
+## 作成の背景
+前職が調理師で、在庫管理が苦手で、材料の補充忘れや棚卸しでかなり時間がかかっていたこともあり、
+過去の自分を対象にスマホなどですぐに、在庫の状態を確認できるアプリを作ろうと思ったのがきっかけでした。
 
-* System dependencies
+## DEMO
+- 在庫の追加
+- 品目の編集、削除
+- タブ一覧表示
+- 検索機能（インクリメンタルサーチ）
+- レスポンシブ（タブレットサイズ）
 
-* Configuration
+## 実装予定の内容
+タブ一覧にタブを移動
+検索機能の実装
+タブレットでの使用のために
 
-* Database creation
+## DB設計
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|

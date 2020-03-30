@@ -1,0 +1,23 @@
+.header {
+  width: 100vw;
+  height: 60px;
+  color: rgb(90, 90, 90);
+  border-bottom: 5px solid blue;
+  display: flex;
+  background-color: rgb(252, 246, 191);
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  &__icon {
+    font-size: 20px;
+    display: flex;
+    margin-right: 50px;
+    &--cog{
+      margin-right: 20px;
+      color: rgb(90, 90, 90);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.new-form {
+  &__header {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 5px solid blue;
+    h3 {
+      font-size: 30px;
+      margin-left: 30px;
+    }
+    .new-item-link {
+      margin-left: 30px;
+    }
+  }
+  
+  &__box {
+    width: 800px;
+    height: 300px;
+    margin: 50px 100px;
+    form {
+      .list-box {
+        &__form {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.new-form
+  .new-form__header
+    %h3 品目の追加
+    = link_to '一覧ページへ戻る', '/', class:'link new-item-link'
+  .new-form__box
+    = form_with model: @item, local: true do |f|
+      %ul.list-box
+        %li.list-box__form
+          = f.label :image, "画像を選択"
+          = f.file_field :image
+        %li.list-box__form
+          = f.label :name, "品目名："
+          = f.text_field :name
+        %li.list-box__form
+          = f.label :count, "数量："
+          = f.number_field :count
+        %li.list-box__form
+          = f.label :unit, "単位："
+          = f.text_field :unit
+        %li.list-box__form
+          = f.label :tag_list, "タグ："
+          = f.text_field :tag_list, value: @item.tag_list.join(','), class: "form-control"
+          %p （複数の場合コンマで区切る）
+      = f.submit

@@ -1,0 +1,20 @@
+%h3 品目の編集
+= link_to '一覧ページへ戻る', '/', class:'link'
+= form_with model: @item, local: true do |f|
+  %ul.form-box
+    %li
+      = f.label :name, "商品名："
+      = f.text_field :name
+    %li
+      = f.label :count, "数量："
+      = f.number_field :count
+    %li
+      = f.label :unit, "単位："
+      = f.text_field :unit
+    %li
+      = f.label :image, "画像を選択"
+      = f.file_field :image
+    %li
+      = f.label :tag_list, "タグ（複数の場合コンマで区切る）"
+      = f.text_field :tag_list, value: @item.tag_list.join(','), class: "form-control"
+  = f.submit

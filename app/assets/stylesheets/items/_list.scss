@@ -1,0 +1,35 @@
+.list {
+  height: calc(100vh - 85px);
+  width: 235px;
+  margin: 10px;
+  background-color: lightskyblue;
+  border-radius: 1em;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(178, 224, 252);
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    &--logo {
+      font-size: 25px;
+      margin-left: 10px;
+    }
+    &--icon {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+  &__box {
+    padding: 10px;
+    overflow: scroll;
+    &--tag {
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      background-color: lightsalmon;
+      border-radius: 1em;
+    }
+  }
+}

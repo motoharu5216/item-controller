@@ -1,0 +1,18 @@
+.show-item
+  %h2 品目詳細
+
+  %table.item-table
+    %tr
+      %th 品目名
+      %td= @item.name
+    %tr
+      %th 在庫数
+      %td= "#{@item.count} #{@item.unit}"
+    %tr
+      %th 仕入日
+      %td= @item.created_at.strftime('%Y/%m/%d')
+      
+  .menu-link
+    = link_to 'トップページへ戻る', '/', class:'link'
+    = link_to '編集', edit_item_path, class:'link'
+    = link_to '削除', item_path, method: :delete, class:'link'

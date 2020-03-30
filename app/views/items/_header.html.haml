@@ -1,0 +1,12 @@
+.header
+  %p.header__logo 
+    = link_to '在庫管理アプリ', '/', class:'link'
+  %p.header__name
+    = "ユーザー：#{current_user.name}"
+  %p.header__item
+    = link_to '品目の追加', '/items/new', class:'link'
+  %ul.header__icon
+    = link_to edit_user_path(current_user), class:"link header__icon--cog" do
+      = icon('fas', 'cog')
+    %li.header__icon--info
+      =icon('fas','question-circle')

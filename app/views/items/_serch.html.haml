@@ -1,0 +1,10 @@
+-# %form#form4{:action => "自分のサイトURL", :method => "get"}
+-#   %input#sbox4{:name => "s", :placeholder => "フリーワードを入力", :type => "text"}/
+-#   %button#sbtn4{:type => "submit"}
+-#     %i.fas.fa-search
+
+.search-container
+  = form_tag('/items/search', method: :get, placeholder:'') do
+    = text_field_tag :name, :'', id:'searching-form', placeholder:'検索', autocomplete:'off'
+  .result
+    %ul

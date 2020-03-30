@@ -13,7 +13,7 @@
 ## DEMO
 - 品目の追加
 [![Image from Gyazo](https://i.gyazo.com/5ee7c62bb4902602dd4cd79f581b7cca.gif)](https://gyazo.com/5ee7c62bb4902602dd4cd79f581b7cca)
-- タブをクリックすると関連する品目の表示
+- タグをクリックすると関連する品目の表示
 [![Image from Gyazo](https://i.gyazo.com/2117de9b00364a61830905cf6f413540.gif)](https://gyazo.com/2117de9b00364a61830905cf6f413540)
 
 ## 実装予定の内容

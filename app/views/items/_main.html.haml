@@ -7,7 +7,7 @@
         %th.item__top--image 画像
         %th.item__top--item 品目
         %th.item__top--count 数量
-        %th.item__top--tag タグ
+        -# %th.item__top--tag タグ
         %th.item__top--tag 仕入れ日
       - @myitems.each do |item|
         %tr.item__box
@@ -16,7 +16,7 @@
             = link_to item.name, item_path(item.id), class:'link'
           %td.item__box--count 
             = "#{item.count}#{item.unit}"
-          %td.item__box--tag
-            = render 'items/tag_list', tag_list: item.tag_list
+          -# %td.item__box--tag
+            -# = render 'items/tag_list', tag_list: item.tag_list
           %td.item__box--data
             = item.created_at.strftime('%Y/%m/%d')

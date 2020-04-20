@@ -1,20 +1,12 @@
 class ItemsController < ApplicationController
   def index
     @items = Item.all
+    @tags = Item.tag_counts_on(:tags).order('count DESC')
     items = @items
     @myitems = current_user.items
     if params[:tag_name]
       @myitems = Item.tagged_with("#{params[:tag_name]}")
     end
-    # if params[:tag_name]
-    #   @items = Item.tagged_with("#{params[:tag_name]}")
-    #   items = @items
-    #   @myitems = current_user.items
-    # else
-    #   @items = Item.all
-    #   items = @items
-    #   @myitems = current_user.items
-    # end
   end
 
   def new

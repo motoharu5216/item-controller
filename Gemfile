@@ -64,3 +64,4 @@ gem 'fog-aws'
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'slim-rails'
 gem "binding_of_caller"
+gem "pry-byebug"

@@ -4,4 +4,4 @@
     =icon('fas','cog', class: 'list__header--icon')
   .list__box
     - @tags.each do |tag|
-      = link_to tag, items_tag_list_path(tag.name), class: "link"
+      = link_to tag, root_path(tag_list: item.tag_list), class: "link"

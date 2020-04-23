@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: item-controller_production
-  username: item-controller
-  password: <%= ENV['ITEM-CONTROLLER_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock

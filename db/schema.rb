@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_03_02_111938) do
 
-  create_table "Items", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "items", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.integer "count", null: false
     t.string "unit", null: false

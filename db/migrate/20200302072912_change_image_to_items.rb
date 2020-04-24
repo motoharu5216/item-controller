@@ -1,9 +1,9 @@
 class ChangeImageToItems < ActiveRecord::Migration[5.2]
   def up
-    change_column :Items, :image, :string
+    change_column :items, :image, :string
   end
 
   def down
-    change_column :Items, :image, :text
+    change_column :items, :image, :text
   end
 end

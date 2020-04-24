@@ -4,7 +4,7 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.string :name, null: false
       t.integer :count, null: false
       t.string :unit, null: false
-      t.text :image
+      t.string :image
       t.timestamps
     end
   end

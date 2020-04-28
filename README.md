@@ -3,6 +3,8 @@
 ## アプリ名
 - 在庫管理アプリ（仮）
 - URL https://shielded-oasis-74769.herokuapp.com/
+- ログインID test
+- パスワード　
 
 ## 概要
 - 飲食店向けの在庫の把握と、記帳をメインに設計しています
@@ -16,8 +18,10 @@
 ## DEMO
 - アカウント登録、ログイン画面
 [![Image from Gyazo](https://i.gyazo.com/f330560e2635c5372bca072a5410626e.png)](https://gyazo.com/f330560e2635c5372bca072a5410626e)
+
 - 品目の追加
 [![Image from Gyazo](https://i.gyazo.com/5ee7c62bb4902602dd4cd79f581b7cca.gif)](https://gyazo.com/5ee7c62bb4902602dd4cd79f581b7cca)
+
 - タグをクリックすると関連する品目の表示
 [![Image from Gyazo](https://i.gyazo.com/2117de9b00364a61830905cf6f413540.gif)](https://gyazo.com/2117de9b00364a61830905cf6f413540)
 
@@ -25,7 +29,7 @@
 - タグ機能：左側の一覧画面にタグを表示させたかったが、同じタグ名が複数表示されてしまう状態になるなど苦戦し、まだ実装できていない。
 
 ## 工夫した点
-- ログイン機能：メールアドレスを入力しなくでも登録、ログインできるようにしました。
+- ログイン機能：メールアドレスを入力しなくても登録、ログインできるようにしました。
 
 ## 実装予定の内容
 - 在庫の追加
